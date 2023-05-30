@@ -67,9 +67,9 @@ public class SmartIdPlugin extends CordovaPlugin {
                 username,
                 isProduction
             );
-            callbackContext.success("initSmartId method successful.");
+//             callbackContext.success("initSmartId method successful.");
         } else {
-            callbackContext.error("Expected non-empty string argument.");
+//             callbackContext.error("Expected non-empty string argument.");
         }
     }
 
@@ -79,9 +79,9 @@ public class SmartIdPlugin extends CordovaPlugin {
                 channel,
                 session
             );
-            callbackContext.success("linkSmartId method successful.");
+//             callbackContext.success("linkSmartId method successful.");
         } else {
-            callbackContext.error("Expected non-empty string argument.");
+//             callbackContext.error("Expected non-empty string argument.");
         }
     }
 
@@ -91,9 +91,9 @@ public class SmartIdPlugin extends CordovaPlugin {
                 channel,
                 session
             );
-            callbackContext.success("unLinkSmartId method successful.");
+//             callbackContext.success("unLinkSmartId method successful.");
         } else {
-            callbackContext.error("Expected non-empty string argument.");
+//             callbackContext.error("Expected non-empty string argument.");
         }
     }
 
@@ -110,22 +110,22 @@ public class SmartIdPlugin extends CordovaPlugin {
                         isProduction
                 );
             }catch (Exception e){
-                callbackContext.error("smartCoreOperation method failed.");    
+//                 callbackContext.error("smartCoreOperation method failed.");
             }
         } else {
-            callbackContext.error("Expected non-empty string argument.");
+//             callbackContext.error("Expected non-empty string argument.");
         }
     }
 
     private void startSmartId(CallbackContext callbackContext) {
-        callbackContext.success(message);
+//         callbackContext.success(message);
     }
 
     private void coolMethod(String message, CallbackContext callbackContext) {
         if (message != null && message.length() > 0) {
-            callbackContext.success(message);
+//             callbackContext.success(message);
         } else {
-            callbackContext.error("Expected one non-empty string argument.");
+//             callbackContext.error("Expected one non-empty string argument.");
         }
     }
 }
